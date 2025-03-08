@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+.box {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid brown;
+    background-color: #eee;
+    text-align: center;
+}
+.responsive-box {
+    width: 80%;
+    max-width: 600px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid brown;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .responsive-box {
+        width: 95%;
+        height: 80px;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.color-box {
+    width: 120px;
+    height: 100px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.red-box {
+    background-color: red;
+}
+.blue-box {
+    background-color: blue;
+}
+
+.green-box {
+    background-color: green;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+}
+th {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+tbody tr:hover {
+    background-color: #ddd;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-container img {
+    width: 400px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+.image-container img:hover {
+    opacity: 1;
+}
+img {
+  opacity: 0.5;
+}
+</style>
+<body>
+    <h2>3.1</h2>
+    <div class="box">
+        This is a basic HTML page.
+    </div>
+    <div class="container">
+        <div class="color-box red-box">Red Box</div>
+        <div class="color-box blue-box">Blue Box</div>
+        <div class="color-box green-box">Green Box</div>
+    </div>
+    <h2>3.2</h2>
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+    </ul>
+    <h2>3.3</h2>
+    <h3>Ví dụ về trình bày bảng</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên công ty</th>
+                <th>Địa chỉ</th>
+                <th>Quốc gia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>qưe</td><td>ád</td><td>zxc</td></tr>
+            <tr><td>654p</td><td>Christina Berglund</td><td>Swqưe</td></tr>
+            <tr><td>312Moctezuma</td><td>cxz</td><td>Mesádco</td></tr>
+            <tr><td>qưel</td><td>Rvnl</td><td>qưe</td></tr>
+        </tbody>
+    </table>
+    <h3>Hiệu ứng ảnh</h3>
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vzuNZyhq6Hy1ELv6M8Hhzgch4vl4ubVMWA&s" alt="Mô tả ảnh">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmWWqJHx1ukbmLST_bytqb3jUq9ai3cdkKAp4JfsEBT0nldrHqq-C5IZyUlUUZw8EG8Jcx5vNpnRZTbPUN9-zkmw" alt="okayu">
+    </div>
+</body>
+</html>
